@@ -7,7 +7,7 @@
         <title>Frontend Mentor | QR code component</title>
         
         <style>
-            @import url(https://fonts.googleapis.com/css?family=Outfit:wght@400;700);
+            @import url(https://fonts.googleapis.com/css?family=Outfit:wght@400;700&display=swap);
 
             :root{
                 --White: hsl(0, 0%, 100%);
@@ -31,7 +31,6 @@
             #text{
                 font-family:"Outfit";
                 font-size: 15px;
-                font-weight: 400;
                 color: var(--Grayish-blue);
                 text-align: center;
             }
@@ -40,7 +39,7 @@
                 background-color: var(--White);
                 padding: 20px;
                 border-radius: 25px;
-                height: 500px;
+                height: 400px;
                 width: 250px;
                 display: flex;
                 flex-direction: column;
@@ -51,6 +50,11 @@
                 transform: translate(-50%,-50%);
             }
 
+            #qr-code{
+                max-width: 240px;
+                border-radius: 15px;
+            }
+
         </style>
 
 
@@ -58,7 +62,7 @@
     <body>
         <main>
         <div class="container">
-            <img id="qr code" src="https://github.com/r33dl3vi/qrcode/blob/main/images/image-qr-code.png" alt="QR-code">
+            <img id="qr-code" src="images/image-qr-code.png" alt="QR-code">
             <h1 id="heading">Improve your front-end skills by building projects</h1>
             <p id="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
         </div>
