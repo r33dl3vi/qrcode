@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- displays site properly based on user's device -->
+
+        <title>Frontend Mentor | QR code component</title>
+        
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Outfit:wght@400;700);
+
+            :root{
+                --White: hsl(0, 0%, 100%);
+                --Light-gray: hsl(212, 45%, 89%);
+                --Grayish-blue: hsl(220, 15%, 55%);
+                --Dark-blue: hsl(218, 44%, 22%);
+            }
+
+            body{
+                background-color: var(--Light-gray);
+            }
+
+            #heading {
+                font-family:"Outfit";
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--Dark-blue);
+                text-align: center;
+            }
+
+            #text{
+                font-family:"Outfit";
+                font-size: 15px;
+                font-weight: 400;
+                color: var(--Grayish-blue);
+                text-align: center;
+            }
+
+            .container {
+                background-color: var(--White);
+                padding: 20px;
+                border-radius: 25px;
+                height: 500px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+        <main>
+        <div class="container">
+            <img id="qr code" src="https://github.com/r33dl3vi/qrcode/blob/main/images/image-qr-code.png" alt="QR-code">
+            <h1 id="heading">Improve your front-end skills by building projects</h1>
+            <p id="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+        </main>
+    </body>
+</html>
